@@ -57,7 +57,7 @@ $ ./insert-data.sh
 Подключение к базе данных `store_default` с помощью `psql` и изучение структуры всех таблиц, используя команды `\dt` и `\d`.
 
 ```bash
-$ psql "host=51.250.21.103 port=5432 dbname=store_default user=user password=password"
+$ psql "host=<IP_address> port=5432 dbname=store_default user=user password=password"
 ```
 
 Вывод всех отношений (таблиц, последовательностей, представлений) в текущей базе данных `store_default`.
@@ -119,7 +119,7 @@ CREATE DATABASE store OWNER migration_user;
 Подключение к базе данных `store` с помощью `psql`.
 
 ```bash
-psql "host=51.250.21.103 port=5432 dbname=store user=migration_user password=migration_user_password"
+psql "host=<IP_address> port=5432 dbname=store user=migration_user password=migration_user_password"
 ```
 
 <details>
